@@ -22,7 +22,7 @@ export const Home = () => {
     const fetchUsers = async () => {
       try {
         if (loggedInUser && loggedInUser._id) {
-          const response = await axios.get('https://skillswap-backend-429j.onrender.com:3011/api/getAllUsers', {
+          const response = await axios.get('https://skillswap-backend-429j.onrender.com/api/getAllUsers', {
             headers: {
               'Authorization': `Bearer ${loggedInUser.token}`,
             },
@@ -47,7 +47,7 @@ export const Home = () => {
       try {
         if (users.length > 0) {
           const activeUserId = users[currentIndex]._id;
-          const response = await axios.get(`https://skillswap-backend-429j.onrender.com:3011/api/getAllUsers/${activeUserId}`, {
+          const response = await axios.get(`https://skillswap-backend-429j.onrender.com/api/getAllUsers/${activeUserId}`, {
             headers: {
               'Authorization': `Bearer ${loggedInUser.token}`,
             },
@@ -69,7 +69,7 @@ export const Home = () => {
 
       // Send a request to the backend to swipe right
       const response = await axios.post(
-        `https://skillswap-backend-429j.onrender.com:3011/api/swipeRight/${swipedUserId}`,
+        `https://skillswap-backend-429j.onrender.com/api/swipeRight/${swipedUserId}`,
         {},
         {
           headers: {
@@ -98,7 +98,7 @@ export const Home = () => {
   
       // Send a request to the backend to swipe left
       await axios.post(
-        `https://skillswap-backend-429j.onrender.com:3011/api/swipeLeft/${swipedUserId}`,
+        `https://skillswap-backend-429j.onrender.com/api/swipeLeft/${swipedUserId}`,
         {},
         {
           headers: {

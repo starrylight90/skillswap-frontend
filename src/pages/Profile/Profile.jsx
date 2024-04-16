@@ -85,7 +85,7 @@ const Page2 = ({ onPrevious, formData, setFormData }) => {
   
     // Send the data to the backend
     try {
-      const response = await axios.post('https://skillswap-backend-429j.onrender.com:3011/api/user', formData);
+      const response = await axios.post('https://skillswap-backend-429j.onrender.com/api/user', formData);
   
       
   
@@ -110,14 +110,14 @@ const Page2 = ({ onPrevious, formData, setFormData }) => {
         formData.append('files', file, fileName);
       });
 
-      const response = await axios.post('https://skillswap-backend-429j.onrender.com:3011/api/upload', formData);
+      const response = await axios.post('https://skillswap-backend-429j.onrender.com/api/upload', formData);
 
       // Separate images and videos based on file type
       const imagePaths = response.data.filter((path) => path.endsWith('.jpg') || path.endsWith('.jpeg') || path.endsWith('.png'));
       const videoPaths = response.data.filter((path) => path.endsWith('.mp4'));
 
       // Prepend base URL to image paths
-      const baseUrl = 'https://skillswap-backend-429j.onrender.com:3011/uploads/';
+      const baseUrl = 'https://skillswap-backend-429j.onrender.com/uploads/';
       const formattedImagePaths = imagePaths.map((path) => baseUrl + path);
 
       // Update formData without overwriting existing data

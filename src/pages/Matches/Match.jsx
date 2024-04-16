@@ -14,7 +14,7 @@ const Match = () => {
       try {
         if (!loggedInUser || !loggedInUser._id) return;
 
-        const response = await axios.get(`https://skillswap-backend-429j.onrender.com:3011/api/getUsersInChat/${loggedInUser._id}`, {
+        const response = await axios.get(`https://skillswap-backend-429j.onrender.com/api/getUsersInChat/${loggedInUser._id}`, {
           headers: {
             'Authorization': `Bearer ${loggedInUser.token}`,
           },

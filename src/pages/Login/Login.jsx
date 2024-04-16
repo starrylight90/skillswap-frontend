@@ -20,7 +20,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('https://skillswap-backend-429j.onrender.com:3011/api/loginUser', {
+      const response = await fetch('https://skillswap-backend-429j.onrender.com/api/loginUser', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
