@@ -1,0 +1,74 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0077b6;
+}
+
+.login-form-1 {
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-1 h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0077b6;
+}
+
+.login-form-1 .form-control {
+  border: 1px solid #0077b6;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.login-form-1 .btnSubmit {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.login-form-1 .ForgetPwd {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+.login-form-1 .btn-lg {
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.login-container {
+  background-image: url('../images/magicpattern-saRKnTHBEhU-unsplash.jpg');
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Set the container height to viewport height */
+}
+
+.login-form-1 {
+  background: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to the form */
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,67 @@
+/* userProfile.css */
+
+.user-card {
+  max-width: 1000px; /* Increased max-width */
+  margin: 40px auto; /* Increased margin */
+  padding: 40px; /* Increased padding */
+  background-color: #f9f9f9;
+  border-radius: 30px; /* Increased border-radius */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Increased box shadow */
+  font-family: Arial, sans-serif; /* Changed font */
+  height: 600px;
+}
+
+.user-details-container {
+  display: flex;
+}
+
+.user-photo-container {
+  flex: 0 0 auto;
+}
+
+.user-photo {
+  width: 150px; /* Increased photo size */
+  height: 150px; /* Increased photo size */
+  border-radius: 50%;
+  margin-right: 30px; /* Increased margin */
+}
+
+.user-info-container {
+  flex: 1;
+}
+
+.user-info-item {
+  margin-bottom: 20px; /* Increased margin */
+  font-size: 18px; /* Increased font size */
+  color: #333; /* Changed text color */
+}
+
+.user-info-item strong {
+  margin-right: 15px; /* Increased margin */
+  color: #555; /* Changed text color */
+}
+
+.circle1, .circle2, .circle3 {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: bounce 3s infinite alternate;
+  margin: 0 20px;
+}
+
+.circle1 {
+  background-color: #3498db;
+}
+
+.circle2 {
+  background-color: #0f3b58;
+}
+
+.circle3 {
+  background-color: #9534db;
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-20px); }
+}
